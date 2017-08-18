@@ -15,3 +15,17 @@ goku
 ```
 Hello world.
 ```
+
+## GET /fail
+Fail page
+
+===
+
+### Success Message
+ต้องไม่ผ่าน
+
+* Status: 500
+
+```
+Fail
+```

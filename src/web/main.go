@@ -12,6 +12,7 @@ func response(rw http.ResponseWriter, r *http.Request) {
 
 func fail(rw http.ResponseWriter, r *http.Request) {
 	fmt.Println(r.Method)
+	rw.WriteHeader(500)
 	rw.Write([]byte("Fail"))
 }
 
