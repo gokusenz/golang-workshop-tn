@@ -10,7 +10,13 @@ func response(rw http.ResponseWriter, r *http.Request) {
 	rw.Write([]byte("Hello world."))
 }
 
+func fail(rw http.ResponseWriter, r *http.Request) {
+	fmt.Println(r.Method)
+	rw.Write([]byte("Fail"))
+}
+
 func main() {
 	http.HandleFunc("/", response)
+	http.HandleFunc("/fail", fail)
 	http.ListenAndServe(":8080", nil)
 }
