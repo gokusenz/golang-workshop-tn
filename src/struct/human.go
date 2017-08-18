@@ -18,7 +18,7 @@ func NewFullHuman(f string, l string, a int) Human {
 	return Human{f, l, a}
 }
 
-func main() {
+func human() {
 	h1 := Human{firstname: "Nattawut"}
 	h1.eat()
 }
