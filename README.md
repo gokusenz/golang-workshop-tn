@@ -1,1 +1,1 @@
-# Go crawl
+# Golang workshop
